@@ -4,10 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radio Player</title>
+    <style>
+      div {
+        display: flex;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      .inner-container {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
   </head>
 
   <body>
+    <h1>RADIOs</h1>
+    <div>
+      <img src="download.png" />
+      <div class="inner-container">
+        <p>radio</p>
+        <audio controls>
+          <source
+            src="https://sverigesradio.se/topsy/direkt/srapi/2755.mp3"
+            type="audio/mp3"
+          />
+        </audio>
+      </div>
+    </div>
+
     <script src="radioplayer.js"></script>
-    <div id="channels"></div>
   </body>
 </html>
