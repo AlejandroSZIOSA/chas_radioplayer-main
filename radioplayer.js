@@ -18,24 +18,25 @@ function showChannels(channels) {
   channels.forEach((channel) => {
     //Create elements
     const containerEl = document.createElement("div");
-    //radioContainerEl.classList.add("radio-container");
     const imgEl = document.createElement("img");
-    //console.log(channel.image);
-
-    const titleEl = document.createElement("h2");
-
     const innerContainerEl = document.createElement("div");
 
     //Add information to the elements
     imgEl.src = channel.image;
-    titleEl.innerText = channel.name;
-
+    containerEl.style.backgroundColor = `#${channel.color}`;
     // Add children
     BODY_EL.appendChild(containerEl);
     containerEl.appendChild(imgEl);
     containerEl.appendChild(innerContainerEl);
-    innerContainerEl.appendChild(titleEl);
-    //console.log(channel.name);
+
+    innerContainerEl.innerHTML = `<h2 class="title"> ${channel.name}</h2> 
+    <audio controls>
+      <source src=${channel.liveaudio.url}
+      type="audio/mp3"/>
+    </audio>`;
+    innerContainerEl.classList.add("inner-container");
+
+    //console.log(channel.liveaudio.url);
   });
 }
 
