@@ -1,6 +1,6 @@
 // Steg 1. Gör en fetch till 'https://api.sr.se/api/v2/channels/?format=json'
 
-const BODY_EL = document.querySelector("body");
+const MAIN_CONTAINER = document.querySelector(".main-container");
 
 async function getRadioChannels() {
   const res = await fetch(
@@ -25,7 +25,7 @@ function showChannels(channels) {
     imgEl.src = channel.image;
     containerEl.style.backgroundColor = `#${channel.color}`;
     // Add children
-    BODY_EL.appendChild(containerEl);
+    MAIN_CONTAINER.appendChild(containerEl);
     containerEl.appendChild(imgEl);
     containerEl.appendChild(innerContainerEl);
 

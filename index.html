@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Radio Player</title>
     <style>
+      .main-container {
+        flex-direction: column;
+      }
+
       div {
         display: flex;
+        gap: 10px;
       }
       img {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
       }
       h2 {
         height: 20px;
@@ -23,17 +28,18 @@
   </head>
 
   <body>
-    <h1>RADIOs</h1>
-    <!-- <div>
-      <img src="download.png" />
-      <div class="inner-container">
-        <p>radio</p>
-        <audio controls>
-          <source src="https://sverigesradio.se/topsy/direkt/srapi/2755.mp3" />
-        </audio>
-      </div>
-    </div> -->
-
+    <div class="main-container">
+      <h1>RADIOs</h1>
+      <!-- <div>
+        <img src="download.png" />
+        <div class="inner-container">
+          <p>radio</p>
+          <audio controls>
+            <source src="https://sverigesradio.se/topsy/direkt/srapi/2755.mp3" />
+          </audio>
+        </div>
+      </div> -->
+    </div>
     <script src="radioplayer.js"></script>
   </body>
 </html>
