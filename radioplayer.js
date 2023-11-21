@@ -7,7 +7,6 @@ async function getRadioChannels() {
     "http://api.sr.se/api/v2/channels?format=json&size=100/channels/"
   );
   const dataRadio = await res.json();
-  //console.log(dataRadio.channels);
   showChannels(dataRadio.channels);
 }
 
@@ -24,6 +23,7 @@ function showChannels(channels) {
     //Add information to the elements
     imgEl.src = channel.image;
     containerEl.style.backgroundColor = `#${channel.color}`;
+
     // Add children
     MAIN_CONTAINER.appendChild(containerEl);
     containerEl.appendChild(imgEl);
@@ -35,8 +35,6 @@ function showChannels(channels) {
       type="audio/mp3"/>
     </audio>`;
     innerContainerEl.classList.add("inner-container");
-
-    //console.log(channel.liveaudio.url);
   });
 }
 
