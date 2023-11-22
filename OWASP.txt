@@ -1,12 +1,29 @@
 Give answers in swedish to the following questions in a text-file in your repo:
 
-What is OWASP and what is its primary mission as described in the article?
+-What is OWASP and what is its primary mission as described in the article?
+
+Sv:OWASP (Open Web Application Security Project) Det är en dedikerad organization till It-säkerhet. Huvudmålet 
+är att ge gratis säkerhet support till web appar. 
+
+-Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web 
+application's security.
+
+Sv: Det är ett teknik som handlar om att skicka misstänksam data genom nätet med huvudtänket att komma in 
+på en data bas. 
+Till ex. Genom att skicka Sql queries med målet att få root control(superuser) över hela Data base. 
+Sen får man alla C.R.U.D tillgångar.
+
+-Explain two strategies to prevent Broken Authentication vulnerabilities.
+
+Sv: 
+
+1-Two-factor authentication: Två gånger authentication på två olika sätt.
+
+2-
+
+-Describe the potential consequences of Insecure Deserialization in web applications. How can developers
+protect against such attacks?
 
 
-Explain the concept of "Injection". Provide an example of how an injection attack could compromise a web application's security.
-
-Explain two strategies to prevent Broken Authentication vulnerabilities.
-
-Describe the potential consequences of Insecure Deserialization in web applications. How can developers protect against such attacks?
-
-Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested in the article to prevent XSS attacks in web applications.
+-Briefly define Cross-Site Scripting (XSS) as outlined in the article and list two methods suggested 
+in the article to prevent XSS attacks in web applications.
