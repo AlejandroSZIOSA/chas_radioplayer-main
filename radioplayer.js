@@ -15,16 +15,16 @@ getRadioChannels();
 
 function showChannels(channels) {
   channels.forEach((channel) => {
-    //Create elements
+    // 1- Create elements
     const containerEl = document.createElement("div");
     const imgEl = document.createElement("img");
     const innerContainerEl = document.createElement("div");
 
-    //Add information to the elements
+    //2-Add information to the elements
     imgEl.src = channel.image;
     containerEl.style.backgroundColor = `#${channel.color}`;
 
-    // Add children
+    //3- Add children
     MAIN_CONTAINER.appendChild(containerEl);
     containerEl.appendChild(imgEl);
     containerEl.appendChild(innerContainerEl);
