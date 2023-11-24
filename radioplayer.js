@@ -20,21 +20,20 @@ function showChannels(channels) {
     const imgEl = document.createElement("img");
     const innerContainerEl = document.createElement("div");
 
-    //2-Add information to the elements
+    //  2-Add information to the elements
     imgEl.src = channel.image;
     containerEl.style.backgroundColor = `#${channel.color}`;
-
-    //3- Add children
-    MAIN_CONTAINER.appendChild(containerEl);
-    containerEl.appendChild(imgEl);
-    containerEl.appendChild(innerContainerEl);
-
     innerContainerEl.innerHTML = `<h2 class="title"> ${channel.name}</h2> 
     <audio controls>
       <source src=${channel.liveaudio.url}
-      type="audio/mp3"/>
+      type="audio/mpeg"/>
     </audio>`;
     innerContainerEl.classList.add("inner-container");
+
+    //  3- Add children
+    MAIN_CONTAINER.appendChild(containerEl);
+    containerEl.appendChild(imgEl);
+    containerEl.appendChild(innerContainerEl);
   });
 }
 
